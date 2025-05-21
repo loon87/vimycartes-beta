@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | VimyCartes</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <h1>Contactez-nous</h1>
-  </header>
-  <main>
-    <form>
-      <label>Nom :</label><br />
-      <input type="text" /><br />
-      <label>Email :</label><br />
-      <input type="email" /><br />
-      <label>Message :</label><br />
-      <textarea rows="4"></textarea><br />
-      <button type="submit">Envoyer</button>
-    </form>
-  </main>
-</body>
-</html>
+<form action="https://formspree.io/f/xjkwdvyq" method="POST">
+  <input type="hidden" name="_redirect" value="https://vimycartes.com/merci.html">
+
+  <label>Nom complet :<br>
+    <input type="text" name="name" required>
+  </label><br><br>
+
+  <label>Email :<br>
+    <input type="email" name="email" required>
+  </label><br><br>
+
+  <label>Sujet :<br>
+    <input type="text" name="subject" required>
+  </label><br><br>
+
+  <label>Message :<br>
+    <textarea name="message" rows="5" required></textarea>
+  </label><br><br>
+
+  <button type="submit">Envoyer le message</button>
+</form>
